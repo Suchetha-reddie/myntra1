@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Myntra</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#men">Men</a></li>
+            <li><a href="#women">Women</a></li>
+            <li><a href="#kids">Kids</a></li>
+        </ul>
+        <div class="search-bar">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="Search for products, brands, and more">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+        <div class="cart">
+            <a href="#" onclick="toggleCartList()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMVnwVI9yHDqxr1Gxhq_1HlP0NE6bPeKZIg&s" alt="Cart"></a>
+        </div>
+    </nav>
+
+    <!-- Cart List -->
+    <div class="cart-list" id="cart-list">
+        <div class="cart-header">Cart</div>
+        <!-- Cart items will be dynamically inserted here -->
+        <div class="cart-footer">
+            <span class="total-price">$0.00</span>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="main-content">
+        <div class="banner">
+            <img src="https://www.dfupublications.com/images/2023/02/07/Myntra%20imposes%20fees%20on%20frequent%20returners_large.jpg" alt="Banner">
+        </div>
+        <div class="category-section">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <a href="#men">
+                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/11780934/2020/4/3/1ed79c22-68b5-491a-b673-e91e4411d8aa1585905063620HIGHLANDERMenOliveGreenBlackSlimFitCheckedCasualShirt1.jpg" alt="Men">
+                        <h3>Men</h3>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#women">
+                        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25015076/2023/9/22/a5f09985-b1bc-48ad-87fc-7903e3aa383e1695328458738LULUSKYBlueShirtStyleTop1.jpg" alt="Women">
+                        <h3>Women</h3>
+                    </a>
+                </div>
+                <div class="category-item">
+                    <a href="#kids">
+                        <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/28939608/2024/6/22/721e1cdd-9f14-4fff-a58c-5b43a53d49721719029705381-The-Tribe-Kids-Boys-Oversized-Floral-Printed-Opaque-Cotton-C-3.jpg" alt="Kids">
+                        <h3>Kids</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Men Section -->
+    <section id="men" class="main-content">
+        <h1>Men's Collection</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/29044862/2024/4/18/3d23f22d-16c0-4af1-bc99-72ffdc72d7951713435528587ManiacMenTypographyDrop-ShoulderSleevesT-shirt1.jpg" alt="Product 1">
+                <h3>Men's T-Shirt</h3>
+                <p>₹3099.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/21085650/2023/6/13/cd319e42-169d-46dd-838e-c2a83f7b8d721686632515107-Calvin-Klein-Jeans-Men-Blue-Straight-Fit-Light-Fade-Pure-Cot-1.jpg" alt="Product 2">
+                <h3>Men's Jeans</h3>
+                <p>₹1499.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/18523602/2022/11/14/0c3924dc-91f5-4a29-b947-270a7d3bd4011668420158976-Roadster-Men-Jackets-5851668420158155-1.jpg" alt="Product 3">
+                <h3>Men's Jacket</h3>
+                <p>₹999.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Women Section -->
+    <section id="women" class="main-content">
+        <h1>Women's Collection</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23784794/2023/7/14/0a6accf9-1b15-4728-9523-5b9611c370881689335743375-Sangria-Women-Ethnic-Dresses-41689335742798-1.jpg" alt="Product 1">
+                <h3>Women's Dress</h3>
+                <p>₹3,099.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/18759108/2023/1/9/79b95ee1-a1c5-4a16-88f8-05d8df3023b21673258007913-HERENOW-Women-Skirts-5041673258007316-1.jpg" alt="Product 2">
+                <h3>Women's Skirt</h3>
+                <p>₹2,999.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/23770758/2023/6/27/bcd0d6a8-e134-423b-8c5e-0d83e67e43041687846293509ExoticGreenPUStructuredHandheldBagwithQuilted1.jpg" alt="Product 3">
+                <h3>Women's Handbag</h3>
+                <p>₹6699.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kids Section -->
+    <section id="kids" class="main-content">
+        <h1>Kids' Collection</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/27651332/2024/2/17/fce8bd77-9210-44c6-8974-a2c1c89a106f1708112060983KidsvilleMinecraftPrintedRegularFitTshirtForBoys1.jpg" alt="Product 1">
+                <h3>Kids' T-Shirt</h3>
+                <p>₹599.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/22549588/2023/3/29/6917d1df-f927-41cd-8501-bcddc0b2c80c1680033645620KidsOnBoardYellowPolkaDotPrintCrepeFitFlareDress1.jpg" alt="Product 2">
+                <h3>Kids' dress</h3>
+                <p>₹720.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/28724308/2024/4/5/2f2ed744-f151-4146-8d68-708e06deb6741712310866184BAESDUnisexKidsColourblockedSneakers1.jpg" alt="Product 3">
+                <h3>Kids' Shoes</h3>
+                <p>₹600.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Myntra Clone. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <script>
+        function toggleCartList() {
+            var cartList = document.getElementById('cart-list');
+            if (cartList.classList.contains('show')) {
+                cartList.classList.remove('show');
+            } else {
+                cartList.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
