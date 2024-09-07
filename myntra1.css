@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff3f6c;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar .search-bar .search-button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar .search-bar .search-button:hover {
+    background-color: #ff6b81;
+    color: white;
+}
+
+.navbar .cart {
+    margin-left: 20px;
+}
+
+.navbar .cart a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cart List */
+.cart-list {
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+    z-index: 1001;
+}
+
+.cart-list.show {
+    display: block; /* Show when toggled */
+}
+
+.cart-list .cart-header {
+    background-color: #ff3f6c;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.cart-list .cart-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart-list .total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Category Section */
+.category-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-item {
+    text-align: center;
+}
+
+.category-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Product Section */
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff3f6c;
+}
+
+.product-item .add-to-cart {
+    margin-top: 10px;
+}
+
+.product-item .add-to-cart button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3f6c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-item .add-to-cart button:hover {
+    background-color: #ff6b81;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #ff3f6c;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
